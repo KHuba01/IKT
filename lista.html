@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <title>
+            Lista
+        </title>
+        <link rel="stylesheet" href="style.css" />
+        <script type="text/javascript">
+        </script>
+        <meta charset="utf-8" />
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+            }
+            li{
+                float: left;
+            }
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding:14px 16px ;
+                text-decoration: none;
+            }
+            li a:hover:not(.active) {
+                background-color: #111;
+            }
+            .active {
+                background-color: #04aa6d;
+            } 
+        </style>
+
+    </head>
+    <body>
+        <header id="fejlec">
+            <img src="alvaselony2.jpg" alt="logo, kép" height="200px"  />
+            <h1 id="szlogen">
+                Alvás Előnyei
+            </h1> 
+        </header>
+        <section id="tartalom">
+            <nav id="menusav">
+                <ul>
+                    <li><a class="active"
+                    href="index.html">Kezdőlap</a></li>
+                <li><a href="kepek.html">Képlink</a></li>
+                <li><a href="lista.html">Lista</a></li>
+                <li><a href="orarend.html">Órarend</a></li>
+                </ul>
+                <h1>Kedvenc tantárgyaim:</h1>
+    <ol>
+        <li>Testnevelés</li>
+        <li>Informatika & távközlés I gyakorlat</li>
+        <li>IKT</li>
+    </ol>
+
+    <h2>Hobbijaim:</h2>
+    <ul>
+        <li>Röpladbda</li>
+        <li>Gépezés</li>
+        <li>Áramkör tervezés, építése, tesztelés</li>
+    </ul>
+    </body>
+</html>

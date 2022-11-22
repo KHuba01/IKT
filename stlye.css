@@ -2,3 +2,6 @@ body {
     background-color: lightblue;
     background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.solidbackgrounds.com%2F1920x1080-light-pink-solid-color-background.html&psig=AOvVaw1VPOk7pBKMNsbY2A9E1VDc&ust=1668793795369000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCICc-L3jtfsCFQAAAAAdAAAAABAE);
   }
+  footer {
+    display: flex;
+  }

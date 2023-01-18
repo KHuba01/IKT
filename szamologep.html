@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <title>
+        Számológép
+    </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Számológép</title>
+    <style>
+         ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    background-color: #333;
+                }
+                li{
+                    float: left;
+                }
+                li a {
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding:14px 16px ;
+                    text-decoration: none;
+                }
+                li a:hover(.active) {
+                    background-color: #111;
+                }
+                .active {
+                    background-color: #04aa6d;
+                } 
+        fieldset{
+            background-color: aqua;
+        }
+        legend{
+            color: rgba(43, 226, 104, 0.671);
+            background-color: rgb(210, 30, 210);
+            border: 2px solid rgb(0, 0, 0);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="menusav">
+        <ul>
+            <li><a class="active"
+            href="index.html">Kezdőlap</a></li>
+        <li><a class="active"href="kepek.html">Képlink</a></li>
+        <li><a class="active"href="lista.html">Lista</a></li>
+        <li><a class="active"href="orarend.html">Órarend</a></li>
+        <li><a class="active"href="div.html">Div Oldal</a></li>
+        <li><a class="active"href="szamologep.html">Számológép</a></li>
+        </ul>
+
+    <form action="javascript:void(0)">
+        <fieldset>
+            <legend>Számol</legend>
+            <br>
+            <input type="number" name="sz" id="a" placeholder="szám1" requiredg>
+            <input type="number" name="sz" id="b" placeholder="szám2" required>
+            <input type="text" name="sz" id="c" placeholder="eredmény" readonly>
+            <br><br>
+            <input type="submit" value="+" onclick="ad()">
+            <input type="submit" value="-" onclick="ki()">
+            <input type="submit" value="*" onclick="szor()">
+            <input type="submit" value="/" onclick="oszt()">
+            <input type="reset" value="törlés">
+        </fieldset>
+    </form>
+
+    <script>
+        function ad() {
+            c.value = Number(a.value) + Number(b.value)
+        }
+
+        function ki() {
+            c.value = Number(a.value) - Number(b.value)
+        }
+
+        function szor() {
+            c.value = Number(a.value) * Number(b.value)
+        }
+
+        function oszt() {
+            c.value = Number(a.value) / Number(b.value)
+        }
+    </script> 
+</body>
+</html>

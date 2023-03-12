@@ -4,4 +4,6 @@ body {
   }
   footer {
     display: flex;
+    transform: scale(120%);
+    backface-visibility: hidden;
   }
